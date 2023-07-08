@@ -1,0 +1,167 @@
+                                //JSON ITERATING THE GIVEN LOOPS/
+
+//for loop//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json comparison</title>
+</head>
+<body>
+    <script>
+       var json = [{"name":"Logesh","age":32,"city":"Erode"}];
+       for(var i=0; i<json.length; i++){
+         console.log(json[i]);
+       }
+    </script>
+</body>
+</html>                        
+
+//for in loop//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json comparison</title>
+</head>
+<body>
+    <script>
+       var json = {"name":"Logesh","age":32,"city":"Erode"};
+       for(var key in json){
+         console.log(json[key]);
+       }
+    </script>
+</body>
+</html>             
+
+
+//for of loop//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json comparison</title>
+</head>
+<body>
+    <script>
+       var json = [{"name":"Logesh","age":32,"city":"Erode"}];
+       for(var key of json){
+        console.log(key);
+       }
+    </script>
+</body>
+</html>    
+
+
+//forEach loop//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json comparison</title>
+</head>
+<body>
+    <script>
+       var json = `{"name":"Logesh","age":32,"city":"Erode"}`;
+       var obj = JSON.parse(json);
+       Object.keys(obj).forEach(key => {
+       var value = obj[key];
+        console.log(`${key}:${value}`);
+      });
+    </script>
+</body>
+</html>    
+
+
+                                  //JSON RESUME//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json comparison</title>
+</head>
+<body>
+    <script>
+       var Resume ={Basics:{"Name":"Logeshnarayanan",
+              "Email":"logeshnarayanan09@gmail.com",
+              "Contact":"91-7010972263",
+              "Degree":"MCA",
+              "Location": {
+                "Address":"101,Alampalayam,
+                "City":"Anthiyur",
+                "District":"Erode",
+                "PostalCode":638501,
+                "Country":"India",
+                "State":"Tamilnadu"
+              },
+            },
+             "Workexperience": [{
+               "Company":"ShahiExportspvtLTD",
+               "Position":"Supervisor",
+               "StartDate":"15-06-2015",
+               "EndDate":"26-08-2019",
+               "Summary":"Supervising the quality of clothes and manage inwards and outwards
+              }],
+               "Education":[{
+                   "Course":"MCA",
+                   "Institution":"Mahendra Institute of Technology",
+                   "University":"Anna University Chennai",
+                   "Percentage(CGPA)":"7.5",
+                   "Year of passing": 2013,
+                }],
+                 "Skills": [{
+                    "Course":"FSD",
+                    "Institute":"GUVI",
+                    "Duration":"3Months"
+                  }],
+                   "Languages Known":[{
+                       "Language1":"Tamil",
+                       "Language2":"English"
+                    }],
+                     "Projects": [{
+                        "name":"YouTupe clone",
+                        "start-date":"12-03-2023",
+                        "end-date":"15-03-2023",
+                        "summery":"The project was perform to the same as youtube i have use the HTML,CSS,JAVASCRIPT technologies"
+                      }]
+            };
+    </script>
+</body>
+</html>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+               
+                
+              
